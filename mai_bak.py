@@ -23,6 +23,27 @@ def make_feed(path_file):
     feed_list.append(read_dict)
     return feed_list
 
+# with open(file1_path, 'r', encoding='utf-8' ) as read:
+#     read1_list = []
+#     for line in read:
+#         read1_list.append(line)
+# with open(file2_path, 'r', encoding='utf-8' ) as read:
+#     read2_list = []
+#     for line in read:
+#         read2_list.append(line)
+# with open(file3_path, 'r', encoding='utf-8' ) as read:
+#     read3_list = []
+#     for line in read:
+#         read3_list.append(line)
+
+# output_data1 = [file1_path +'\n', str(len(read1_list))+'\n', (read1_list), ['\n']]
+# output_data2 = [file2_path +'\n', str(len(read2_list))+'\n', (read2_list), ['\n']]
+# output_data3 = [file3_path +'\n', str(len(read3_list))+'\n', (read3_list), ['\n']]
+
+# output_list = [output_data1, output_data2, output_data3]
+# output_list.sort(key=lambda item: len(item[2]))
+
+
 feed_list = make_feed(paths)
 
 def feed_to_output(feed_list):
