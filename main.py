@@ -29,7 +29,6 @@ def feed_to_output(feed_list):
     output_feed = []
     with open(output_path, "w") as output:
         for ind, elm in enumerate(feed_list):
-            # print(ind, elm)
             for key, value in elm.items():
                 output_feed.append(value)
     output_feed.sort(key=lambda item: len(item[2]))
